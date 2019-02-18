@@ -25,3 +25,5 @@ urlpatterns = [
                   path('', RedirectView.as_view(url='/catalog/', permanent=True)),
                   path('users/', include('users.urls')),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# This is from new branch - 1
