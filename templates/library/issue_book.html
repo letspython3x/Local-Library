@@ -1,0 +1,26 @@
+<html>
+<body>
+
+ <div class ="content-section">
+
+<form method="POST" action="issuebook/">
+
+    {% csrf_token %}
+
+    <label for="Title">Title</label><br>
+    <input type="text" name="title" id="title"><br>
+    <label for="Author">Author</label><br>
+    <input type="text" name="Author" id ="Author"><br>
+    <label for="isbn">ISBN</label><br>
+    <input type="text" name="ISBN" id = "ISBN"><br>
+    <label for="Genre">Genre</label><br>
+    <input type="radio" name="Genre" id = "Genre" value="Science_Fiction" checked> Science Fiction
+    <input type="radio" name="Genre" id = "Genre"  value="Fantasy"> Fantasy
+    <input type="radio" name="Genre" id = "Genre" value="Action"> Action
+    <input type="radio" name="Genre" id = "Genre" value="Mystery"> Mystery
+    <input type="radio" name="Genre" id = "Genre"  value="Historical Fiction"> Historical Fiction<br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>

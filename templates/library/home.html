@@ -1,0 +1,10 @@
+{% extends "library/base.html" %}
+{% block content %}
+
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <p>Issued by {{ post.author }} on {{ post.issue_date}}</p>
+            <p> whose genre is {{  post.genre }}</p>
+            <p>ISBN number is {{ post.ISBN }}</p>
+            {% endfor %}
+ {% endblock content %} 
